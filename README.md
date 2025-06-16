@@ -98,6 +98,13 @@ src/
 
 ---
 
+## 筆記參考HackMD
+Day1：https://hackmd.io/@Shiki9029/H1oOCojmgg
+Day2：https://hackmd.io/@Shiki9029/rktqspi7le
+Day3：https://hackmd.io/@Shiki9029/rJ_puCTQxe
+
 ## 📄 授權
 
 MIT © 2025 Shiki
+
+
