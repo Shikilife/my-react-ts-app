@@ -1,54 +1,103 @@
-# React + TypeScript + Vite
+# React + TypeScript 練習專案
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> 使用 **React 18、TypeScript 5 與 Vite** 打造的教學專案，快速體驗現代前端開發流程。
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 快速開始
 
-## Expanding the ESLint configuration
+```bash
+# 1. 安裝相依套件
+npm install
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# 2. 啟動開發伺服器 (http://localhost:5173)
+npm run dev
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+# 3. 建立正式版
+npm run build
+
+# 4. 預覽正式版
+npm run preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 先決條件
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+* **Node ≥ 18**（建議搭配 NVM）
+* **npm** (v10+) 或 **pnpm / yarn**
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+---
+
+## 🔧 技術棧
+
+| 層級     | 工具              |
+| ------ | --------------- |
+| 打包器    | Vite            |
+| UI 函式庫 | React 18        |
+| 語言     | TypeScript 5    |
+| 程式碼品質  | ESLint、Prettier |
+
+---
+
+## 📂 專案結構
+
 ```
+src/
+ ├─ components/            # 可重複使用的 UI 元件
+ │   ├─ Hello.tsx          # <Hello name="..." age={...} />
+ │   ├─ HelloWorldButton.tsx # 切換 “Hello world” 顯示
+ │   └─ ChildButton.tsx    # 子呼叫父 callback 範例
+ ├─ App.tsx                # 入口元件
+ └─ main.tsx               # ReactDOM 掛載點
+```
+
+> **註：** 後續可新增 `pages/`、`services/`、`hooks/`、`types/` 等資料夾，配合 MVC 思維進行分層。
+
+---
+
+## ✨ 已完成功能
+
+* **WelcomeCard / Hello 元件**：透過 props 與 TypeScript 型別驗證顯示個人化問候。
+* **HelloWorldButton**：示範 `useState<boolean>` 與條件渲染；按鈕可切換顯示「Hello world」。
+* **父→子→父 資料流**：`ChildButton` 接收 callback 更新父元件狀態。
+* **（即將推出）TodoList**：陣列狀態管理、CRUD 與 `map` 列表渲染。
+
+---
+
+## 🗺️ 學習路線圖
+
+| 步驟 | 主題                               | 狀態    |
+| -- | -------------------------------- | ----- |
+| 1  | 專案初始化與工具鏈                        | ✅ 已完成 |
+| 2  | 元件與 Props                        | ✅ 已完成 |
+| 3  | `useState` 與互動                   | ✅ 已完成 |
+| 4  | 父子元件溝通                           | ✅ 已完成 |
+| 5  | 列表渲染與 CRUD                       | ⬜ 進行中 |
+| 6  | API 串接（fetch / Axios）            | ⬜     |
+| 7  | 版面美化（Tailwind CSS / CSS Modules） | ⬜     |
+| 8  | 部署（Vercel / Netlify）             | ⬜     |
+
+---
+
+## 🛠️ NPM 指令
+
+| 指令                | 功能              |
+| ----------------- | --------------- |
+| `npm run dev`     | 啟動開發伺服器 (HMR)   |
+| `npm run build`   | 建立最適化正式版        |
+| `npm run preview` | 本地預覽正式版         |
+| `npm run lint`\*  | 執行 ESLint（若已設定） |
+
+---
+
+## 🙌 參與方式 / 後續步驟
+
+1. Clone 專案並依照 **快速開始** 完成環境安裝。
+2. 瀏覽 `src/components` 中的範例元件。
+3. 依 **學習路線圖** 逐步新增功能並重構程式碼。
+4. 歡迎提出 PR / issue 改進文件、重構或加入新示範功能。
+
+---
+
+## 📄 授權
+
+MIT © 2025 Shiki
