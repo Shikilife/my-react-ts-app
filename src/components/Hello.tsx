@@ -1,4 +1,4 @@
-import React , {useState} from 'react';
+import React  from 'react';
 
 // 🧠 定義 Props 型別
 type HelloProps = {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Hello from './components/Hello';
 import HelloWorldButton from './components/HelloWorldButton';
 import ChildButton from './components/ChildButton';

@@ -91,16 +91,14 @@ src/
 | 4  | 父子元件溝通                   | ✅ 已完成                          |
 | 5  | 列表渲染與 CRUD               | ✅ 已完成                          |
 | 6  | API 串接（fetch / Axios）    | ✅ 已完成                          |
-| 7  | 版面美化（Tailwind CSS / CSS） | ⚠️ **暫緩／待轉移至 Linux/Cloud IDE** |
+| 7  | 版面美化（Tailwind CSS / CSS） | ⚠️ **暫緩／待轉移至 Linux** |
 
 ---
 
 ## 🙌 參與方式 / 後續步驟
 
-1. **推薦**於 WSL/Ubuntu 或 Cloud IDE 環境開發，保證 tailwind/postcss 能順利運作。
-2. Clone 專案後依照 **快速開始** 安裝相依套件。
-3. 依 **學習路線圖** 持續增修元件、重構程式碼、強化型別設計。
-4. 之後將 TodoList 串接 API、導入 Tailwind 美化、拆分成更細緻的功能模組。
+  WSL/Ubuntu 環境開發，確保 tailwind/postcss 能順利運作。
+
 
 ---
 
@@ -109,20 +107,11 @@ src/
 1. Day1：[https://hackmd.io/@Shiki9029/H1oOCojmgg](https://hackmd.io/@Shiki9029/H1oOCojmgg)
 2. Day2：[https://hackmd.io/@Shiki9029/rktqspi7le](https://hackmd.io/@Shiki9029/rktqspi7le)
 3. Day3：[https://hackmd.io/@Shiki9029/rJ\_puCTQxe](https://hackmd.io/@Shiki9029/rJ_puCTQxe)
+4. Day4：[https://hackmd.io/@Shiki9029/BJC2Rj1Eel](https://hackmd.io/@Shiki9029/BJC2Rj1Eel)
+5. Day5：[https://hackmd.io/@Shiki9029/SJgQg3MB4le](https://hackmd.io/@Shiki9029/SJgQg3MB4le)
+6. Day6：[https://hackmd.io/@Shiki9029/SyafamBNex](https://hackmd.io/@Shiki9029/SyafamBNex)
+
 
 ---
 
-## 🚩 注意事項
-
-* **若遇到 npm/npx 指令執行失敗、tailwindcss CLI 找不到等狀況，請直接切換至 Linux/WSL 或 Cloud IDE，再執行安裝指令，所有問題都能排除。**
-* 這是 Windows 下 npm/npx 眾多已知 bug 之一，並非專案設計錯誤，請安心專注於 React/TypeScript/Tailwind 學習本身！
-
-```
-
----
-
-這樣 README.md 就**很完整交代你的踩雷、技術路徑與新手真相**，  
-讓你或同學、助教、未來面試主管一看就懂專案脈絡＋你踩過多少坑＋未來怎麼移植！
-
-有要再細分更進階的章節，也能隨時追加～
-```
+## 🚩 網站：https://shikilife.github.io/my-react-ts-app/
